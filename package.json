@@ -6,7 +6,12 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
+    "format": "prettier . --write --ignore-unknown",
     "lint": "next lint",
+    "lint:fix": "next lint --fix && pnpm format",
+    "stylelint": "stylelint \"src/**/*.{scss,css}\"",
+    "stylelint:fix": "pnpm stylelint -- --fix && pnpm format",
+    "lint:all": "pnpm lint && pnpm stylelint",
     "prepare": "husky",
     "commit": "cz"
   },
@@ -37,6 +42,12 @@
     "eslint": "^9",
     "eslint-config-next": "15.1.5",
     "husky": "^9.1.7",
+    "lint-staged": "^15.4.1",
+    "pnpm": "^9.15.4",
+    "prettier": "^3.4.2",
+    "stylelint": "^16.13.2",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
     "typescript": "^5"
   }
 }
