@@ -14,7 +14,8 @@
     "lint:all": "pnpm lint && pnpm stylelint",
     "commit": "cz",
     "sb": "storybook dev -p 6006",
-    "build-sb": "storybook build"
+    "build-sb": "storybook build",
+    "tunnel": "ssh -p 443 -R0:127.0.0.1:3000 -L4300:127.0.0.1:4300 qr@a.pinggy.io"
   },
   "config": {
     "commitizen": {
