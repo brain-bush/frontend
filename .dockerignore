@@ -49,5 +49,15 @@ next-env.d.ts
 *.sw?
 
 # Git
-.git
-.gitignore
+.git*
+.husky
+
+# Linting
+.lintstagedrc
+commitlint.config.ts
+
+# Storybook
+.storybook
+
+# Documentation
+*.md
