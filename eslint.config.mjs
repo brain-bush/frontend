@@ -47,6 +47,18 @@ const eslintConfig = [
             'warn',
             { allowConstantExport: true },
           ],
+          '@typescript-eslint/consistent-type-imports': 'error',
+          'no-console': 'warn',
+          'no-undef': 'off',
+          '@conarti/feature-sliced/layers-slices': 'error',
+          '@conarti/feature-sliced/absolute-relative': 'error',
+          '@conarti/feature-sliced/public-api': 'error',
+        },
+      },
+      {
+        files: ['**/*.{ts,tsx}'],
+        excludedFiles: ['dist/**', 'app/**'],
+        rules: {
           'react/function-component-definition': [
             'error',
             {
@@ -54,11 +66,6 @@ const eslintConfig = [
               unnamedComponents: 'arrow-function',
             },
           ],
-          '@typescript-eslint/consistent-type-imports': 'error',
-          'no-console': 'warn',
-          '@conarti/feature-sliced/layers-slices': 'error',
-          '@conarti/feature-sliced/absolute-relative': 'error',
-          '@conarti/feature-sliced/public-api': 'error',
         },
       },
     ],
