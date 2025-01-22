@@ -9,7 +9,7 @@
     "format": "prettier . --write --ignore-unknown",
     "lint": "next lint",
     "lint:fix": "next lint --fix && pnpm format",
-    "stylelint": "stylelint \"src/**/*.{scss,css}\"",
+    "stylelint": "stylelint \"src/**/*.{scss,css}\" --allow-empty-input",
     "stylelint:fix": "pnpm stylelint -- --fix && pnpm format",
     "lint:all": "pnpm lint && pnpm stylelint",
     "prepare": "husky",
