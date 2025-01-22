@@ -12,7 +12,6 @@
     "stylelint": "stylelint \"src/**/*.{scss,css}\" --allow-empty-input",
     "stylelint:fix": "pnpm stylelint -- --fix && pnpm format",
     "lint:all": "pnpm lint && pnpm stylelint",
-    "prepare": "husky",
     "commit": "cz",
     "sb": "storybook dev -p 6006",
     "build-sb": "storybook build"
