@@ -50,6 +50,12 @@ const eslintConfig = [
           '@typescript-eslint/consistent-type-imports': 'error',
           'no-console': 'warn',
           'no-undef': 'off',
+        },
+      },
+      {
+        files: ['**/*.{ts,tsx}'],
+        excludedFiles: ['dist/**', 'app/**'],
+        rules: {
           '@conarti/feature-sliced/layers-slices': 'error',
           '@conarti/feature-sliced/absolute-relative': 'error',
           '@conarti/feature-sliced/public-api': 'error',
@@ -69,10 +75,12 @@ const eslintConfig = [
         },
       },
     ],
-    ecmaFeatures: {
+    parserOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-      jsx: true,
+      ecmaFeatures: {
+        jsx: true,
+      },
     },
   }),
 ];

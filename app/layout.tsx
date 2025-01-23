@@ -1,4 +1,4 @@
-import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { GlobalProvider } from '@/app/providers';
 
 export default function RootLayout({
   children,
@@ -8,7 +8,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <AntdRegistry>{children}</AntdRegistry>
+        <GlobalProvider>{children}</GlobalProvider>
       </body>
     </html>
   );
