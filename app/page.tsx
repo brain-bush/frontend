@@ -1,3 +1,5 @@
+import { Empty } from 'antd';
+
 export default function Home() {
-  return <div>Page</div>;
+  return <Empty description="Test" />;
 }
