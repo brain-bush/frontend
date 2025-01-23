@@ -1,3 +1,5 @@
-export const Home = () => {
-  return <div>Page</div>;
-};
+import { Empty } from 'antd';
+
+export default function Home() {
+  return <Empty description="Test" />;
+}
