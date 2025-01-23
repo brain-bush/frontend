@@ -28,9 +28,13 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
+    "camelize-ts": "^3.0.0",
     "next": "15.1.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-redux": "^9.2.0",
+    "snakify-ts": "^2.3.0"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "3.2.4",
