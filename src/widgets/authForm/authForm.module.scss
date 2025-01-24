@@ -1,0 +1,27 @@
+.block.block {
+  border-radius: 0 0 24px 24px;
+  padding: 24px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.blockBg.blockBg {
+  background-color: rgba(228, 226, 231, 0.03);
+}
+
+.refreshLink.refreshLink {
+  align-self: flex-start;
+}
+
+.dividerWrapper {
+  margin-inline: 60px;
+}
+
+.labelText.labelText {
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 143%;
+  color: #e4e2e7;
+}

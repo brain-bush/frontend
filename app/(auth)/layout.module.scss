@@ -1,0 +1,14 @@
+.container.container {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.layout {
+  width: 460px;
+
+  border-radius: 24px;
+
+  backdrop-filter: blur(48px);
+  background-color: rgba(13, 7, 28, 0.75);
+}

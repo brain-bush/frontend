@@ -1,9 +1,8 @@
 import type { DefaultProps } from '@/shared/types';
-import { ReduxProvider } from './redux';
-import { AntdRegistry } from '@ant-design/nextjs-registry';
+import { ReduxProvider, AntProvider } from './';
 
 export const GlobalProvider = ({ children }: DefaultProps) => (
   <ReduxProvider>
-    <AntdRegistry>{children}</AntdRegistry>
+    <AntProvider>{children}</AntProvider>
   </ReduxProvider>
 );
