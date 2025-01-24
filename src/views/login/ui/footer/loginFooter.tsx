@@ -7,7 +7,7 @@ import { Typography, Layout, ConfigProvider } from 'antd';
 const { Paragraph } = Typography;
 const { Footer } = Layout;
 
-export const LoginFooter: React.FC = () => {
+export const LoginFooter = () => {
   return (
     <ConfigProvider
       theme={{

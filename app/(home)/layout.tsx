@@ -1,6 +1,6 @@
 import { ProtectedProvider } from '@/app/providers';
 
-export default function HomeLayout({
+export default function HomePageLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

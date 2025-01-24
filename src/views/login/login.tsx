@@ -6,7 +6,7 @@ import { ConfigProvider, Divider, Layout } from 'antd';
 
 const { Content } = Layout;
 
-export const Login: React.FC = () => {
+export const Login = () => {
   return (
     <ConfigProvider
       theme={{

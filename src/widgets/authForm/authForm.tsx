@@ -9,7 +9,7 @@ import clsx from 'clsx';
 
 const { Paragraph } = Typography;
 
-export const AuthForm: React.FC = () => {
+export const AuthForm = () => {
   return (
     <ConfigProvider
       theme={{

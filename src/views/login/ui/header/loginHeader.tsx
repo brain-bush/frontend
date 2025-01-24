@@ -1,12 +1,10 @@
-'use client';
-
 import styles from './loginHeader.module.scss';
 import { Typography, Layout, ConfigProvider } from 'antd';
 
 const { Title } = Typography;
 const { Header } = Layout;
 
-export const LoginHeader: React.FC = () => {
+export const LoginHeader = () => {
   return (
     <Header className={styles.container}>
       <ConfigProvider

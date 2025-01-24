@@ -1,21 +1,14 @@
 import { AuthRedirectProvider } from '@/app/providers';
-import { Flex } from 'antd';
-import styles from './layout.module.scss';
+import { AuthLayout } from '@/shared/ui';
 
-export default function AuthLayout({
+export default function AuthPageLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <AuthRedirectProvider>
-      <Flex
-        vertical
-        align="center"
-        justify="center"
-        className={styles.container}>
-        <div className={styles.layout}>{children}</div>
-      </Flex>
+      <AuthLayout>{children}</AuthLayout>
     </AuthRedirectProvider>
   );
 }
