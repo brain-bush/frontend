@@ -2,6 +2,7 @@
 
 import { ConfigProvider, Button, Flex, Divider, Input, Typography } from 'antd';
 import { UserOutlined, KeyOutlined } from '@ant-design/icons';
+import { YA_OAUTH_URL } from '@/entities/auth';
 import styles from './authForm.module.scss';
 import Link from 'next/link';
 import clsx from 'clsx';
@@ -69,9 +70,7 @@ export const AuthForm: React.FC = () => {
         </Flex>
         <Flex vertical gap="large" className={styles.block}>
           <Flex vertical gap="small" align="center">
-            <Button block className={styles.btn}>
-              Войти в аккаунт
-            </Button>
+            <Button block>Войти в аккаунт</Button>
             <Link href={'/register'} legacyBehavior passHref>
               <ConfigProvider
                 theme={{
@@ -89,12 +88,10 @@ export const AuthForm: React.FC = () => {
             <Divider />
           </div>
           <Flex vertical gap="small">
-            <Button block className={styles.btn}>
-              Войти в аккаунт
-            </Button>
-            <Button block className={styles.btn}>
-              Войти в аккаунт
-            </Button>
+            <a href={YA_OAUTH_URL}>
+              <Button block>Войти при помощи Яндекс</Button>
+            </a>
+            <Button block>Войти в аккаунт</Button>
           </Flex>
         </Flex>
       </div>

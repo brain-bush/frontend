@@ -1,3 +1,4 @@
+import '@ant-design/v5-patch-for-react-19';
 import { GlobalProvider } from '@/app/providers';
 import 'normalize-scss';
 import '../src/app/assets/styles/index.scss';
