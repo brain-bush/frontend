@@ -27,7 +27,7 @@ const authApi = createApi({
       query: () =>
         createApiRequest({
           url: API_PATHS.REFRESH,
-          method: METHODS.GET,
+          method: METHODS.POST,
         }),
     }),
   }),

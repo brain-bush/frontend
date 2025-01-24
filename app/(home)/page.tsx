@@ -17,7 +17,12 @@ export default function HomePage() {
 
   return (
     <Flex gap={10} justify="center" align="center">
-      <Paragraph>Привет, {user?.nickname}!</Paragraph>
+      <Paragraph
+        style={{
+          margin: 0,
+        }}>
+        Привет, {user?.nickname}!
+      </Paragraph>
       <Button type="primary" onClick={handleLogout}>
         Выйти
       </Button>
