@@ -1,5 +1,5 @@
 import { AuthRedirectProvider } from '@/app/providers';
-import { AuthLayout } from '@/shared/ui';
+import { AuthLayout } from '@/shared/ui/authLayout';
 
 export default function AuthPageLayout({
   children,
