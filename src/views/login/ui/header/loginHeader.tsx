@@ -1,5 +1,5 @@
-import styles from './loginHeader.module.scss';
 import { Typography, Layout, ConfigProvider } from 'antd';
+import styles from './loginHeader.module.scss';
 
 const { Title } = Typography;
 const { Header } = Layout;
