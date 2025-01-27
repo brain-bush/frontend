@@ -1,9 +1,7 @@
 import { ConfigProvider } from 'antd';
-import type { AntdLinkConfigProviderProps } from './antdLink.types';
+import type { DefaultProps } from '../../types';
 
-export const AntdLinkConfigProvider = ({
-  children,
-}: AntdLinkConfigProviderProps) => {
+export const AntdLinkConfigProvider = ({ children }: DefaultProps) => {
   return (
     <ConfigProvider
       theme={{

@@ -1,5 +1,3 @@
-import type { DefaultProps } from '../../types';
+import type { LinkProps } from 'antd/lib/typography/Link';
 
-export type AntdLinkProps = DefaultProps;
-
-export type AntdLinkConfigProviderProps = DefaultProps;
+export type AntdLinkProps = LinkProps;
