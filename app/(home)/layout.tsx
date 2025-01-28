@@ -1,9 +1,6 @@
 import { ProtectedProvider } from '@/app/providers';
+import type { LayoutProps } from '@/shared/types';
 
-export default function HomeLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function HomePageLayout({ children }: LayoutProps) {
   return <ProtectedProvider>{children}</ProtectedProvider>;
 }
